@@ -8,6 +8,9 @@
 * 
 * Inspired by HillsoftCode:
 * https://www.youtube.com/playlist?list=PLAqGIYgEAxrUO6ODA0pnLkM2UOijerFPv
+* 
+* Enable Open MP in the settings for this to work
+*
 */
 
 
