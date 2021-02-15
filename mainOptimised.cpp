@@ -70,9 +70,7 @@ float RayTrace(Ray ray, Shape* scene, Light* lights, int depth = 64)
 	{
 		//diffusion
 		float diffused = lights->enlighten(intersection, scene);
-
-		//return diffused;
-
+		
 		//reflection
 		vec3 reflectedVec = ray.direction - 2 * (ray.direction * intersection.normal) * intersection.normal;
 		float reflected = RayTrace(Ray(intersection.point(), reflectedVec), scene, lights, depth-1);
