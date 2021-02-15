@@ -19,7 +19,7 @@ Possible ratios
 */
 constexpr int dW = 8, dH = 8;
 
-int WIDTH = GetSystemMetrics(SM_CXSCREEN) - dW; //We are subtracting dW so newline char can fit
+int WIDTH = GetSystemMetrics(SM_CXSCREEN) - dW;
 int HEIGHT = GetSystemMetrics(SM_CYSCREEN) - dH;
 
 class Screen {
@@ -48,8 +48,7 @@ public:
     void Draw() {
         //allocate
         int Y = HEIGHT / dH, X = WIDTH / dW + 1;
-        //if (HEIGHT % dH != 0)   Y--;
-        //if (WIDTH % dW != 0)   X--;
+     
         char* frame=new char[Y*X];
 
         for (int i = 0; i < Y - 1; ++i) {
