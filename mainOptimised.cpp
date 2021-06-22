@@ -20,7 +20,7 @@
 #include <omp.h>
 #include "screen.h"
 #include "camera.h"
-#include "shape.h"
+#include "Shape.h"
 
 const float PI = 3.141592f;
 

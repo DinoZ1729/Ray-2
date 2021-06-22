@@ -16,7 +16,7 @@
 #include <ctime>
 #include "screen.h"
 #include "camera.h"
-#include "shape.h"
+#include "Shape.h"
 
 const float PI = 3.141592f;
 
